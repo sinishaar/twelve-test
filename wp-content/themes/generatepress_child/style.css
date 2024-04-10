@@ -8,3 +8,29 @@
  Version:      0.1
 */
 
+.woocommerce ul.products li.product a img {    
+    object-fit: cover;
+}
+
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;       
+    margin: 0 0 0em;
+    justify-content: space-between;    
+}
+
+.woocommerce ul.products li.product {
+    display: flex;
+    flex-direction: column;
+} 
+
+.woocommerce ul.products li.product .button {
+    margin-top: auto;
+    width: fit-content;
+} 
+
+@media screen and (max-width: 480px) {
+    .woocommerce ul.products li.product {        
+        width: 100% !important;         
+    } 
+}
